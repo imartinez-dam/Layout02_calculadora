@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Posem el títol, les pantalles i els botons un sota l’altre -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- Títol -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.01"
+        android:background="@color/blue"
+        android:text="Calculadora"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <!-- Aquí mostrem els números i operadors que anem prement -->
+    <TextView
+        android:id="@+id/screen"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textSize="32sp"></TextView>
+
+    <!-- Aquí mostrem el resultat -->
+    <TextView
+        android:id="@+id/screenResultat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:textSize="24sp"></TextView>
+
+    <!-- Agrupem les quatre files de botons -->
+    <LinearLayout
+        android:id="@+id/butons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <!-- Fila 1: 1, 2, 3 i divisió -->
+        <LinearLayout
+            android:id="@+id/fila1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boto1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="2">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="3">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botoDividir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="/">
+
+            </Button>
+        </LinearLayout>
+
+        <!-- Fila 2: 4, 5, 6 i multiplicació -->
+        <LinearLayout
+            android:id="@+id/fila2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boto4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="5">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botoMultiplicar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="*">
+
+            </Button>
+        </LinearLayout>
+
+        <!-- Fila 3: 7, 8, 9 i suma -->
+        <LinearLayout
+            android:id="@+id/fila3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/boto7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="7">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="8">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="9">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botoSuma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="+">
+
+            </Button>
+        </LinearLayout>
+
+        <!-- Fila 4: igual, zero, esborrar i resta -->
+        <LinearLayout
+            android:id="@+id/fila4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/botoIgual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/blue"
+                android:text="=">
+
+            </Button>
+
+            <Button
+                android:id="@+id/boto0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botoC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:text="C">
+
+            </Button>
+
+            <Button
+                android:id="@+id/botoResta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/grey"
+                android:text="-">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

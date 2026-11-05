@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema base de l'app -->
+    <style name="Base.Theme.Segonlayout" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Aquí podem personalitzar el tema fosc -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+</resources>

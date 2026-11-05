@@ -1,0 +1,11 @@
+# Aquí podem afegir les regles R8 del projecte
+# El plugin d’Android ajunta les regles de src/main/keepRules i les passa a R8
+#
+# Més informació aquí
+#   https://d.android.com/r/tools/r8/keep-rules
+
+# Si més endavant fem servir un WebView amb una interfície JavaScript, podem descomentar aquest exemple
+# Cal posar-hi el nom complet de la classe que fa d’interfície
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
